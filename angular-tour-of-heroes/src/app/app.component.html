@@ -1,36 +1,40 @@
-
 <div class="jumbotron text-center">
-  <h1 >{{title}}</h1>
+  <h1>{{ title }}</h1>
 </div>
-  <!-- Progress bar  -->
-  Under developement
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
-  </div>
+<!-- Progress bar  -->
+Under developement
+<div class="progress">
+  <div
+    class="progress-bar progress-bar-striped progress-bar-animated"
+    style="width:40%"
+  ></div>
+</div>
 
 <div class="container">
   <body>
-
-
+    <nav>
+      <a routerLink="/dashboard">Dashboard</a>
+      
+      <a routerLink="/heroes">Heroes</a>
+    </nav>
 
     <!-- heroes component -->
-    <app-heroes></app-heroes> 
-
+    <router-outlet></router-outlet>
+    <app-messages></app-messages>
   </body>
 
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
 
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<router-outlet></router-outlet>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <router-outlet></router-outlet>
+</div>
