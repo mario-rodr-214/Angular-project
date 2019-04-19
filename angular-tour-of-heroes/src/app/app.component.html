@@ -11,17 +11,18 @@ Under developement
 </div>
 
 <div class="container">
-  <body>
+  
     <nav>
       <a routerLink="/dashboard">Dashboard</a>
-      
       <a routerLink="/heroes">Heroes</a>
+
     </nav>
 
     <!-- heroes component -->
     <router-outlet></router-outlet>
-    <app-messages></app-messages>
-  </body>
+    
+    
+ 
 
   <link
     rel="stylesheet"
@@ -36,5 +37,7 @@ Under developement
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
   <router-outlet></router-outlet>
 </div>
+<app-messages></app-messages>
